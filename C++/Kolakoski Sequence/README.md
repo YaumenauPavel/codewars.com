@@ -71,11 +71,13 @@ Describe(correct_results)
 {
       It(should_return_kolakoski_seq)
       {
-          for (Result r : results) Assert::That(generate_kolakoski(r.start, r.n), Equals(r.seq));
+          for (Result r : results) 
+              Assert::That(generate_kolakoski(r.start, r.n), Equals(r.seq));
       }
       It(should_return_possible_kolakoski)
       {
-          for (Result r : results) Assert::That(possibly_kolakoski(r.seq), Equals(r.kolakoski));
+          for (Result r : results) 
+              Assert::That(possibly_kolakoski(r.seq), Equals(r.kolakoski));
       }
 };
 ```
